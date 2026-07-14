@@ -1,0 +1,16 @@
+# UI
+streamlit
+
+# Agent side (OpenAI + LangGraph)
+langgraph
+langchain
+langchain-openai
+openai
+
+# RAG / vector store
+faiss-cpu
+langchain-community
+
+# Utilities
+pydantic
+python-dotenv

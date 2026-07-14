@@ -1,0 +1,4 @@
+openai==2.43.0
+streamlit==1.58.0
+python-dotenv==1.2.2
+# sqlite3 is part of the Python standard library — no install required

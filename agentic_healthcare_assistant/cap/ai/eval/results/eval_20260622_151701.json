@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-06-22T15:17:01.709988",
+  "functional": {
+    "module": "appointments",
+    "success_rate": 1.0,
+    "passed": 5,
+    "total": 5,
+    "details": [
+      {
+        "check": "find_slots_returns_slots",
+        "passed": true,
+        "note": "16 slots"
+      },
+      {
+        "check": "book_creates_appointment",
+        "passed": true,
+        "note": "id=35111c7129d7476ca1575b5fe0ee6a86"
+      },
+      {
+        "check": "booked_slot_removed_from_availability",
+        "passed": true,
+        "note": ""
+      },
+      {
+        "check": "cancel_sets_status_cancelled",
+        "passed": true,
+        "note": ""
+      },
+      {
+        "check": "cancelled_slot_reopened",
+        "passed": true,
+        "note": ""
+      }
+    ]
+  }
+}

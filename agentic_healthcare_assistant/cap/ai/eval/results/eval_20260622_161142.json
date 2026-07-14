@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-06-22T16:11:18.742251",
+  "functional": {
+    "module": "appointments",
+    "success_rate": 1.0,
+    "passed": 5,
+    "total": 5,
+    "details": [
+      {
+        "check": "find_slots_returns_slots",
+        "passed": true,
+        "note": "16 slots"
+      },
+      {
+        "check": "book_creates_appointment",
+        "passed": true,
+        "note": "id=a7c22829d2604a90a916a13af747582b"
+      },
+      {
+        "check": "booked_slot_removed_from_availability",
+        "passed": true,
+        "note": ""
+      },
+      {
+        "check": "cancel_sets_status_cancelled",
+        "passed": true,
+        "note": ""
+      },
+      {
+        "check": "cancelled_slot_reopened",
+        "passed": true,
+        "note": ""
+      }
+    ]
+  },
+  "semantic": {
+    "overall_accuracy": 1.0,
+    "per_module": {
+      "clinic_faq": 1.0,
+      "medline": 1.0
+    },
+    "details": [
+      {
+        "module": "clinic_faq",
+        "query": "Where can I park at the clinic?",
+        "prediction": "You can park at the clinic's on-site underground garage, accessible from Maple Avenue. The parking fee is $3 per half hour, with a daily maximum of $18. If you have an appointment, you can get your parking ticket validated at reception for a reduced flat rate of $5 for the day.\n\nLimited free street parking is available on nearby side streets, with a two-hour maximum during business hours. There are also two designated accessible parking spaces near the garage elevator.\n\nThe building and clinic are wheelchair accessible. If you need any special accommodations for your visit, please inform reception in advance.",
+        "verdict": "CORRECT",
+        "correct": true
+      },
+      {
+        "module": "clinic_faq",
+        "query": "What are the clinic's opening hours?",
+        "prediction": "The clinic is open **Monday to Friday, from 9:00 AM to 5:00 PM** and is **closed on weekends** (Saturday and Sunday) and statutory holidays. Appointments are 30 minutes long, with the last appointment of the day starting at 4:30 PM. For urgent concerns, a limited number of same-day slots are released each morning at 9:00 AM. Walk-ins are accommodated when the schedule allows, but booked appointments take priority.",
+        "verdict": "CORRECT",
+        "correct": true
+      },
+      {
+        "module": "clinic_faq",
+        "query": "Do you accept insurance?",
+        "prediction": "The clinic accepts the Ontario Health Insurance Plan (OHIP) for most medically necessary visits. Please bring a valid health card to every appointment. If your health card is expired, you might be billed directly and need to seek reimbursement.\n\nFor some services like certain vaccines, travel medicine, or medical equipment, these may be covered by private or workplace insurance plans. However, the clinic does not bill private insurers directly but will provide itemized receipts for you to submit to your insurer.\n\nThe clinic accepts payment for uninsured services via debit, Visa, Mastercard, and cash. Make sure to bring your health card and any private insurance details with you. If you're a new patient, please arrive 10 minutes early for registration.",
+        "verdict": "CORRECT",
+        "correct": true
+      },
+      {
+        "module": "medline",
+        "query": "What is type 2 diabetes?",
+        "prediction": "Type 2 diabetes is a condition where your blood sugar levels are too high because your body doesn't make enough insulin or doesn't use insulin well. Insulin is a hormone that helps glucose get into your cells to provide energy. If glucose stays in your blood, it can lead to health problems over time.\n\n**Causes:** \nType 2 diabetes can be caused by a combination of factors, including being overweight, lack of physical activity, and genetics. It often starts with insulin resistance, where your cells don't respond normally to insulin, leading your body to make more insulin. Eventually, your body can't make enough insulin, causing blood sugar levels to rise.\n\n**Risk Factors:**\n- Being over age 45\n- Having prediabetes\n- Being overweight\n- Having a family history of diabetes\n- Belonging to certain ethnic groups\n- Having other health conditions like high blood pressure or high cholesterol\n\n**Symptoms:**\nMany people with type 2 diabetes do not experience symptoms, but they can include increased thirst and urination, increased hunger, fatigue, blurred vision, and sores that do not heal.\n\n**Management:**\nManaging type 2 diabetes involves maintaining blood sugar levels through a healthy lifestyle, which includes a balanced diet, regular physical activity, and potentially medication. Regular monitoring of blood glucose is also important.\n\nFor more detailed information, you can visit the [MedlinePlus page on Type 2 Diabetes](https://medlineplus.gov/diabetestype2.html).\n\nAlways consult with a healthcare professional for a thorough understanding and advice tailored to your personal health needs.",
+        "verdict": "CORRECT",
+        "correct": true
+      },
+      {
+        "module": "medline",
+        "query": "What are common symptoms of asthma?",
+        "prediction": "Common symptoms of asthma include:\n\n- **Chest Tightness**: A feeling of pressure or tightness in the chest.\n- **Coughing**: Often occurs at night or early in the morning. \n- **Shortness of Breath**: Difficulty in breathing or feeling like you can't get enough air.\n- **Wheezing**: A whistling sound when you breathe out.\n\nThese symptoms can vary from mild to severe and may occur daily or only occasionally. During an asthma attack, these symptoms worsen significantly and can become life-threatening.\n\nFor more detailed information, you can visit [MedlinePlus on Asthma](https://medlineplus.gov/asthma.html).\n\nAlways consult a healthcare professional for personalized medical advice and diagnosis.",
+        "verdict": "CORRECT",
+        "correct": true
+      }
+    ]
+  }
+}

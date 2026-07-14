@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-06-22T16:13:22.827843",
+  "functional": {
+    "module": "appointments",
+    "success_rate": 1.0,
+    "passed": 5,
+    "total": 5,
+    "details": [
+      {
+        "check": "find_slots_returns_slots",
+        "passed": true,
+        "note": "16 slots"
+      },
+      {
+        "check": "book_creates_appointment",
+        "passed": true,
+        "note": "id=00061263c28742e593bf08e5e67b0600"
+      },
+      {
+        "check": "booked_slot_removed_from_availability",
+        "passed": true,
+        "note": ""
+      },
+      {
+        "check": "cancel_sets_status_cancelled",
+        "passed": true,
+        "note": ""
+      },
+      {
+        "check": "cancelled_slot_reopened",
+        "passed": true,
+        "note": ""
+      }
+    ]
+  },
+  "semantic": {
+    "overall_accuracy": 1.0,
+    "per_module": {
+      "clinic_faq": 1.0,
+      "medline": 1.0
+    },
+    "details": [
+      {
+        "module": "clinic_faq",
+        "query": "Where can I park at the clinic?",
+        "prediction": "You can park at the clinic's on-site underground garage, accessible from Maple Avenue. The parking fee is $3 per half hour, up to a daily maximum of $18. However, if you have an appointment, you can get your parking ticket validated at reception for a reduced flat rate of $5 for the day. \n\nLimited free street parking is also available on nearby side streets, with a two-hour maximum during business hours. Additionally, there are two designated accessible parking spaces near the garage elevator. \n\nIf you need any accommodations for your visit, please inform the reception in advance. The clinic is also accessible by public transit and has bicycle racks available at the front entrance.",
+        "verdict": "CORRECT",
+        "correct": true
+      },
+      {
+        "module": "clinic_faq",
+        "query": "What are the clinic's opening hours?",
+        "prediction": "The clinic is open **Monday to Friday, from 9:00 AM to 5:00 PM**. It is **closed on weekends and statutory holidays**. Appointments are generally 30 minutes long, with the last appointment starting at 4:30 PM. Same-day urgent slots are released at 9:00 AM each morning.",
+        "verdict": "CORRECT",
+        "correct": true
+      },
+      {
+        "module": "clinic_faq",
+        "query": "Do you accept insurance?",
+        "prediction": "The clinic accepts the Ontario Health Insurance Plan (OHIP) for most medically necessary visits. Please bring a valid health card to each appointment. If your health card is expired or unavailable, you might be billed directly and need to seek reimbursement.\n\nFor services not covered by OHIP, such as certain vaccines or medical equipment, the clinic provides itemized receipts for you to submit to your private insurer, as they do not bill private insurers directly. The clinic accepts payment via debit, Visa, Mastercard, and cash for uninsured services.\n\nRemember to bring your health card and any private insurance information to your appointment. If you're a new patient, please arrive 10 minutes early for registration and bring a list of current medications and any relevant records.",
+        "verdict": "CORRECT",
+        "correct": true
+      },
+      {
+        "module": "medline",
+        "query": "What is type 2 diabetes?",
+        "prediction": "Type 2 diabetes is a disease where your blood glucose, or blood sugar, levels become too high. This occurs because your body either doesn't produce enough insulin or doesn't use insulin effectively. Insulin is a hormone that helps glucose enter your cells to provide energy. With type 2 diabetes, the glucose remains in your blood rather than moving into your cells.\n\nOver time, high blood glucose levels can lead to health problems. However, you can manage type 2 diabetes by adopting a healthy lifestyle, which may include a balanced diet, regular physical activity, and, if necessary, medication.\n\nRisk factors for type 2 diabetes include being overweight, not being physically active, and having a family history of diabetes. It is more common in middle-aged and older people but can also occur in children and younger adults.\n\nSymptoms can develop slowly and may include increased thirst and urination, increased hunger, feeling tired, blurred vision, numbness or tingling in the feet or hands, and sores that do not heal.\n\nTo learn more, you can visit the [MedlinePlus page on Type 2 Diabetes](https://medlineplus.gov/diabetestype2.html).\n\nAlways consult a healthcare professional for personalized medical advice.",
+        "verdict": "CORRECT",
+        "correct": true
+      },
+      {
+        "module": "medline",
+        "query": "What are common symptoms of asthma?",
+        "prediction": "Common symptoms of asthma include:\n\n- Chest tightness\n- Coughing, especially at night or early morning\n- Shortness of breath\n- Wheezing, which causes a whistling sound when you breathe out\n\nThese symptoms can range from mild to severe and may be experienced daily or only occasionally. It's important to note that during an asthma attack, these symptoms can worsen significantly and may require immediate medical attention.\n\nFor more detailed information, you can read about asthma [here](https://medlineplus.gov/asthma.html). Remember to consult a healthcare professional for personalized medical advice.",
+        "verdict": "CORRECT",
+        "correct": true
+      }
+    ]
+  }
+}
