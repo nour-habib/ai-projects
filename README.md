@@ -12,7 +12,7 @@
 <b>Features</b>: Chatbot (create, delete, edit appointments, can write to sqlite3 RAG system), search bar health related terms making API call to Medline
 
 
-<h2>OpsPilot — Support Ops Assistant</h2> 
+<h2>OpsPilot: Support Ops Assistant</h2> 
 
 <b>Stack</b>: FastAPI, React, PostgreSQL, OpenAI, FastMCP 
 
